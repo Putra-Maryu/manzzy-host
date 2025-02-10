@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManzzyHosting - Official Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="link/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="slide-in-left">ManzzyHost</h1>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="assets/logo.jpg" alt="" class="fade-in">
+            <div class="social-media">
+                <a href="https://wa.me/6282269162245" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@admin_manzzy" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/@MANZZYSTORE" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="fade-in">Kami menyediakan Panel Pterodactyl, script bot WhatsApp, dan sewa bot WhatsApp berkualitas dengan harga terjangkau dan layanan profesional. 🚀</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="slide-in-right">Produk-Produk</h2>
+            <div class="filter-buttons">
+                <button class="active" data-category="all">All</button>
+                <button data-category="panel">Panel</button>
+                <button data-category="vps">Vps</button>
+                <button data-category="script">Script</button>
+                <button data-category="sewa">Sewa</button>
+                <button data-category="lainnya">Lainnya</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="lainnya">
+                    <img src="assets/logo.jpg" alt="">
+                    <p><b>Apk Surxrat</b> <br> Free Update</p>
+                    <p class="price">Rp25.000</p>
+                    <button onclick="orderProduct('Apk Surxrat')">Order</button>
+                </div>
+
+
+                <div class="product-card" data-category="panel">
+                    <img src="assets/pterodactyl.jpg" alt="Gambar Panel">
+                    <p><b>Panel Pterodactyl</b> <br> Ram 1Gb - 10Gb</p>
+                    <p class="price">Rp1.000 - 10.000</p>
+                    <button onclick="orderProduct('Panel')">Order</button>
+                </div>
+                <div class="product-card" data-category="panel">
+                    <img src="assets/pterodactyl.jpg" alt="Gambar Panel">
+                    <p><b>Panel Pterodactyl</b> <br> Ram Unlimited</p>
+                    <p class="price">Rp11.000</p>
+                    <button onclick="orderProduct('Panel Unlimited')">Order</button>
+                </div>
+                <div class="product-card" data-category="panel">
+                    <img src="assets/pterodactyl.jpg" alt="Gambar Panel">
+                    <p><b>Reseller</b> <br> Panel Pterodactyl</p>
+                    <p class="price">Rp10.000</p>
+                    <button onclick="orderProduct('Reseller Panel')">Order</button>
+                </div>
+                <div class="product-card" data-category="panel">
+                    <img src="assets/pterodactyl.jpg" alt="Gambar Panel">
+                    <p><b>Admin</b> <br> Panel Pterodactyl</p>
+                    <p class="price">Rp15.000</p>
+                    <button onclick="orderProduct('Admin Panel')">Order</button>
+                </div>
+                <div class="product-card" data-category="panel">
+                    <img src="assets/pterodactyl.jpg" alt="Gambar Panel">
+                    <p><b>Partner</b> <br> Panel Pterodactyl</p>
+                    <p class="price">Rp20.000</p>
+                    <button onclick="orderProduct('Partner Panel')">Order</button>
+                </div>
+                <div class="product-card" data-category="panel">
+                    <img src="assets/pterodactyl.jpg" alt="Gambar Panel">
+                    <p><b>Owner</b> <br> Panel Pterodactyl</p>
+                    <p class="price">Rp30.000</p>
+                    <button onclick="orderProduct('Owner Panel')">Order</button>
+                </div>
+                
+
+                <div class="product-card" data-category="vps">
+                    <img src="assets/vps.jpg" alt="Gambar Vps">
+                    <p><b>VPS RAM 2GB</b> <br> CPU 1</p>
+                    <p class="price">Rp25.000</p>
+                    <button onclick="orderProduct('Vps Ram 2Gb')">Order</button>
+                </div>
+                <div class="product-card" data-category="vps">
+                    <img src="assets/vps.jpg" alt="Gambar Vps">
+                    <p><b>VPS RAM 4GB</b> <br> CPU 2</p>
+                    <p class="price">Rp40.000</p>
+                    <button onclick="orderProduct('Vps Ram 4Gb')">Order</button>
+                </div>
+                <div class="product-card" data-category="vps">
+                    <img src="assets/vps.jpg" alt="Gambar Vps">
+                    <p><b>VPS RAM 8GB</b> <br> CPU 4</p>
+                    <p class="price">Rp50.000</p>
+                    <button onclick="orderProduct('Vps Ram 8Gb')">Order</button>
+                </div>
+                <div class="product-card" data-category="vps">
+                    <img src="assets/vps.jpg" alt="Gambar Vps">
+                    <p><b>VPS RAM 16GB</b> <br> CPU 4</p>
+                    <p class="price">Rp55.000</p>
+                    <button onclick="orderProduct('Vps Ram 16Gb')">Order</button>
+                </div>
+
+
+                <div class="product-card" data-category="script">
+                    <img src="assets/code.jpg" alt="Gambar Script">
+                    <p><b>Script Bot</b> <br> Manzzy V1</p>
+                    <p class="price">Rp20.000</p>
+                    <button onclick="orderProduct('Bot Manzzy V1')">Order</button>
+                </div>
+                <div class="product-card" data-category="script">
+                    <img src="assets/code.jpg" alt="Gambar Script">
+                    <p><b>Script Bot</b> <br> Simple V5</p>
+                    <p class="price">Rp40.000</p>
+                    <button onclick="orderProduct('Bot Manzzy V5')">Order</button>
+                </div>
+                
+
+                <div class="product-card" data-category="sewa">
+                    <img src="assets/bot.jpg" alt="Gambar Bot">
+                    <p><b>Sewa Bot</b> <br> PushKontak 1 Hari</p>
+                    <p class="price">Rp5.000</p>
+                    <button onclick="orderProduct('Sewa Bot PushKontak 1 Hari')">Order</button>
+                </div>
+                <div class="product-card" data-category="sewa">
+                    <img src="assets/bot.jpg" alt="Gambar Bot">
+                    <p><b>Sewa Bot</b> <br> PushKontak 3 Hari</p>
+                    <p class="price">Rp7.000</p>
+                    <button onclick="orderProduct('Sewa Bot PushKontak 3 Hari')">Order</button>
+                </div>
+                <div class="product-card" data-category="sewa">
+                    <img src="assets/bot.jpg" alt="Gambar Bot">
+                    <p><b>Sewa Bot</b> <br> PushKontak 7 Hari</p>
+                    <p class="price">Rp10.000</p>
+                    <button onclick="orderProduct('Sewa Bot PushKontak 7 Hari')">Order</button>
+                </div>
+                <div class="product-card" data-category="sewa">
+                    <img src="assets/bot.jpg" alt="Gambar Bot">
+                    <p><b>Sewa Bot</b> <br> PushKontak 14 Hari</p>
+                    <p class="price">Rp15.000</p>
+                    <button onclick="orderProduct('Sewa Bot PushKontak 14 Hari')">Order</button>
+                </div>
+                
+
+                <div class="product-card" data-category="lainnya">
+                    <img src="assets/logo.jpg" alt="Gambar Logo">
+                    <p><b>Jasa Install</b> <br> Panel</p>
+                    <p class="price">Rp10.000</p>
+                    <button onclick="orderProduct('Install Panel')">Order</button>
+                </div>
+                <div class="product-card" data-category="lainnya">
+                    <img src="assets/logo.jpg" alt="Gambar Logo">
+                    <p><b>Jasa Install</b> <br> Wings</p>
+                    <p class="price">Rp5.000</p>
+                    <button onclick="orderProduct('Install Wings')">Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2 class="fade-in">Contact Us</h2>
+            <p class="fade-in"><a href="https://wa.me/6282269162245" target="_blank">WhatsApp: +62 822-6916-2245</a></p>
+            <p class="fade-in">© 2025 <a href="https://wa.me/6283804272709" target="_blank">Traa-Factory</a>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="link/js/script.js"></script>
+</body>
+</html>

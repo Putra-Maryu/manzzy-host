@@ -1,0 +1,395 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 11rem;
+    border-radius: 0.6rem;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #00BFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #00BFFF;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00BFFF;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/logolyu.jpg') no-repeat center center/cover;
+    padding: 150px 0;
+    text-align: center;
+    border-bottom: 2px solid #00BFFF;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00BFFF;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #00BFFF;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #008B8B;
+}
+
+/* Products Section */
+.products {
+    padding: 80px 0;
+    background-color: #000000;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #00BFFF;
+    font-weight: 600;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background-color: #00BFFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #008B8B;
+    transform: translateY(-3px);
+}
+
+.filter-buttons button.active {
+    background-color: #008B8B;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #18181B;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #00BFFF;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.5);
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00BFFF;
+    font-weight: 600;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00BFFF;
+}
+
+.product-card button {
+    background-color: #00BFFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #008B8B;
+    transform: translateY(-3px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 2px solid #00BFFF;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #00BFFF;
+    font-weight: 600;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 875px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .products h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-card p {
+        font-size: 0.9rem;
+    }
+
+    .product-card .price {
+        font-size: 1rem;
+    }
+
+    .product-card button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .products h2 {
+        font-size: 1.2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+    }
+
+    .product-card p {
+        font-size: 0.8rem;
+    }
+
+    .product-card .price {
+        font-size: 0.9rem;
+    }
+
+    .product-card button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out;
+}
